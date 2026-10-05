@@ -1,0 +1,73 @@
+:root {
+  --green: #b3191e;
+  --green-deep: #3a0709;
+  --navy: #0a0909;
+  --navy-soft: #151212;
+  --text: #e9e2d6;
+  --muted: #9a9087;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--navy);
+  color: var(--text);
+  line-height: 1.65;
+}
+a { color: #e05a4e; }
+.hero {
+  text-align: center;
+  padding: 48px 20px 36px;
+  background: radial-gradient(circle at 50% 20%, var(--green-deep), var(--navy) 70%);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.hero .icon {
+  width: 112px; height: 112px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.45);
+}
+.hero h1 { margin: 18px 0 6px; font-size: 2.1rem; letter-spacing: .5px; }
+.hero .tag { margin: 0; color: var(--muted); }
+.langbtn {
+  margin-top: 18px;
+  background: rgba(255,255,255,.1);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 999px;
+  padding: 7px 18px;
+  font-size: .9rem;
+  cursor: pointer;
+}
+.langbtn:hover { background: rgba(255,255,255,.18); }
+main { max-width: 780px; margin: 0 auto; padding: 28px 20px 40px; }
+.card {
+  background: var(--navy-soft);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 16px;
+  padding: 22px 24px;
+  margin-bottom: 22px;
+}
+h2 { color: var(--green); margin-top: 0; font-size: 1.3rem; }
+h3 { color: #e9e2d6; font-size: 1.05rem; margin: 22px 0 6px; }
+.feat { list-style: none; padding: 0; margin: 16px 0 0; }
+.feat li { padding: 6px 0 6px 26px; position: relative; }
+.feat li::before { content: "▸"; position: absolute; left: 0; }
+.links { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.links a {
+  background: var(--green);
+  color: #f4ece0;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 999px;
+}
+.links a:hover { background: #d22a2f; }
+.back { display: inline-block; margin-bottom: 18px; color: var(--muted); text-decoration: none; }
+footer {
+  text-align: center;
+  padding: 24px 20px 40px;
+  color: var(--muted);
+  font-size: .9rem;
+  border-top: 1px solid rgba(255,255,255,.07);
+}
+.updated { color: var(--muted); font-size: .88rem; font-style: italic; }
